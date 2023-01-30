@@ -1,0 +1,56 @@
+/*.container
+.testimonials__container {
+    width: 50px;
+} */
+
+.testimonials__container {
+    width: 50vw;
+    height: 50vh;
+}
+.container {
+    width: 50%;
+}
+
+.client__avatar {
+    aspect-ratio: 1/1;
+    width: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+
+
+.testimonial {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.client__review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+/* =============== MEDIA QUARIES (MEDIUM DEVICES) =================*/
+@media screen and (max-width: 1024px) {
+    .testimonials__container {
+        width: 80%;
+    }
+}
+
+/* =============== MEDIA QUARIES (SMALL DEVICES) =================*/
+@media screen and (max-width: 600px) {
+    .testimonials__container {
+        width: 90%;
+    }
+
+    .client__review {
+        width: var(--container-width-sm);
+    }
+}
